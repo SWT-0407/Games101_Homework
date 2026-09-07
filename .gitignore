@@ -1,0 +1,23 @@
+# Local CMake output
+**/build/
+**/out/
+
+# Temporary inspection artifacts
+tmp/
+
+# Project-local dependency manager and installed libraries
+.tools/vcpkg/
+.tools/vcpkg_installed/
+.tools/vcpkg_buildtrees/
+.tools/vcpkg_packages/
+.tools/vcpkg_downloads/
+
+# Original downloaded archives are preserved locally; assignments/ is the working tree.
+archives/
+
+# Metadata from macOS-created ZIP files
+**/__MACOSX/
+**/.DS_Store
+
+# VS Code local cache
+.vs/

@@ -1,11 +1,4 @@
 {
-  "C_Cpp.default.compilerPath": "D:/Visual Studio/Project/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe",
-  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
-  "C_Cpp.default.cppStandard": "c++14",
-  "C_Cpp.default.includePath": [
-    "${workspaceFolder}/**",
-    "${workspaceFolder}/../.tools/vcpkg_installed/x64-windows/include"
-  ],
   "cmake.generator": "Visual Studio 16 2019",
   "cmake.platform": "x64",
   "cmake.sourceDirectory": "${workspaceFolder}/pa0/pa0",

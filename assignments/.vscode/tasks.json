@@ -1,0 +1,72 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "GAMES101: Verify environment",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/../scripts/games101.ps1",
+        "verify"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "GAMES101: Build assignment",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/../scripts/games101.ps1",
+        "build",
+        "${input:assignment}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "GAMES101: Run assignment",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/../scripts/games101.ps1",
+        "run",
+        "${input:assignment}"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "assignment",
+      "type": "pickString",
+      "description": "Choose an assignment",
+      "options": [
+        "pa0",
+        "pa1",
+        "pa2",
+        "pa3",
+        "pa4",
+        "pa5",
+        "pa6",
+        "pa7",
+        "pa8"
+      ],
+      "default": "pa0"
+    }
+  ]
+}

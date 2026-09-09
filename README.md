@@ -26,7 +26,9 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ## 使用
 
-重新打开 VS Code，使用户 PATH 生效。常用命令如下：
+建议用 VS Code 打开仓库根目录。如果只打开 `assignments/`，该目录也已提供独立的 `.vscode` 配置；重新加载窗口后，C/C++ 扩展会使用 MSVC x64 和项目本地的 vcpkg 头文件。
+
+在 `assignments/` 工作区中按 `Ctrl+Shift+B` 可选择并编译 PA0-PA8；也可以在命令面板中运行 `Tasks: Run Task`，选择环境检查、编译或运行任务。命令行用法如下：
 
 ```powershell
 .\scripts\games101.ps1 verify
